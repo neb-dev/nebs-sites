@@ -55,6 +55,23 @@ html, body {
   box-sizing: border-box;
   overflow: hidden; }
 
+.dark {
+  background-color: #212121;
+  color: ghostwhite; }
+
+.light {
+  background-color: #f2f2f2;
+  color: #212121; }
+  .light a {
+    color: #212121; }
+  .light input[type=submit] {
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #212121; }
+  .light button {
+    border: 1px solid #212121; }
+
 body {
   display: flex;
   flex-flow: column;
@@ -115,6 +132,8 @@ body {
       border: none; }
 
 /* END OF DEFAULT BREAKPOINT */
+/* END OF SMALL BREAKPOINT */
+/* END OF MEDIUM BREAKPOINT */
 @media (min-width: 1200px) {
   body {
     padding: 24px;
