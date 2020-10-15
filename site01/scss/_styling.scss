@@ -1,0 +1,147 @@
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.dark {
+  background-color: #212121;
+  color: ghostwhite;
+}
+
+.light {
+  background-color: #f2f2f2;
+  color: #212121;
+  
+  a {
+    color: #212121; 
+  }
+  
+  input[type=submit] {
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #212121;
+  }
+  
+  button {
+    border: 1px solid #212121;
+  }
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background;
+  color: $color;
+  padding: 12px;
+  
+  header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    h4 {
+      font-size: 24px;
+      font-weight: $reg;
+    }
+    
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          padding: 12px 18px;
+          margin: 12px 12px;
+
+          a {
+            text-decoration: none;
+            color: $color;
+            font-weight: $light;
+          }
+        }
+      }
+    }
+  } /* END OF HEADER */
+  
+  main {
+    justify-self: flex-start;
+    height: 50vh;
+    
+    form {
+      width: 200px;
+      margin: auto;
+    }
+    
+    div {
+      padding: 12px 0;
+      
+      h6 {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      
+      input[type=text], input[type=password] {
+        width: 196px;
+        border: none;
+        background-color: #414141;
+        color: $color;
+        height: 32px;
+        padding: 0 0 0 4px;
+      }
+      
+      input[type=submit] {
+        font-family: 'Open Sans', sans-serif;
+        width: 100px;
+        height: 30px;
+        border: none;
+      }
+    }
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    button {
+      font-family: 'Open Sans', sans-serif;
+      width: 100px;
+      height: 25px;
+      border: none;
+    }
+  } 
+} /* END OF DEFAULT BREAKPOINT */
+
+
+@include respond-to(small) {  } /* END OF SMALL BREAKPOINT */
+
+
+@include respond-to(medium) {  } /* END OF MEDIUM BREAKPOINT */
+
+
+@include respond-to(large) {
+  body {
+    padding: 24px;
+
+    header {
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0 0 50px 0;
+
+      nav {
+        ul {
+          li {
+            margin: 0 12px;
+          }
+          li:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    } /* END OF HEADER */
+  }
+} /* END OF LARGE BREAKPOINT */
