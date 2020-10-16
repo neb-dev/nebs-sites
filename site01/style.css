@@ -132,11 +132,19 @@ body {
       border: none; }
 
 /* END OF DEFAULT BREAKPOINT */
+@media (min-width: 767px) {
+  body {
+    padding: 16px; } }
 /* END OF SMALL BREAKPOINT */
+@media (min-width: 992px) {
+  body {
+    padding: 18px; } }
 /* END OF MEDIUM BREAKPOINT */
 @media (min-width: 1200px) {
   body {
     padding: 24px;
+    max-width: 1200px;
+    margin: auto;
     /* END OF HEADER */ }
     body header {
       flex-flow: row;

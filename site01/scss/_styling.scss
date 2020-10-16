@@ -117,16 +117,26 @@ body {
 } /* END OF DEFAULT BREAKPOINT */
 
 
-@include respond-to(small) {  } /* END OF SMALL BREAKPOINT */
+@include respond-to(small) { 
+  body {
+    padding: 16px;
+  }
+} /* END OF SMALL BREAKPOINT */
 
 
-@include respond-to(medium) {  } /* END OF MEDIUM BREAKPOINT */
+@include respond-to(medium) { 
+  body {
+    padding: 18px;
+  }
+} /* END OF MEDIUM BREAKPOINT */
 
 
 @include respond-to(large) {
   body {
     padding: 24px;
-
+    max-width: 1200px;
+    margin: auto;
+    
     header {
       flex-flow: row;
       justify-content: space-between;
