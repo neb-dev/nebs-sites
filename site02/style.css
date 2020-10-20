@@ -51,9 +51,8 @@ table {
 @include respond-to(large) { ... }
 */
 html, body {
-  height: 100%;
-  box-sizing: border-box;
-  overflow: hidden; }
+  height: auto;
+  box-sizing: border-box; }
 
 body {
   display: flex;
@@ -84,22 +83,30 @@ body {
             color: ghostwhite;
             display: block;
             padding: 12px 15px; }
+  body main {
+    margin: 48px auto; }
+    body main p {
+      max-width: 600px;
+      line-height: 150%; }
   body footer {
+    border-top: 1px solid rgba(242, 242, 242, 0.5);
+    padding-top: 24px;
     text-align: center;
     width: 100%; }
-    body footer div h4 {
-      margin-top: 48px;
-      font-weight: 400;
-      font-size: 18px; }
-    body footer div ul {
+    body footer div.section {
       margin-bottom: 48px; }
-      body footer div ul li {
-        margin-top: 40px; }
-        body footer div ul li a {
+      body footer div.section h4 {
+        font-weight: 400;
+        font-size: 18px; }
+      body footer div.section ul li {
+        padding: 20px 0; }
+        body footer div.section ul li a {
           text-decoration: none;
           color: ghostwhite;
           font-size: 14px;
           padding: 12px 30px; }
+    body footer div.section:last-child {
+      margin-bottom: 24px; }
 
 /* END OF DEFAULT STYLING */
 

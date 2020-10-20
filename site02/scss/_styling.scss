@@ -1,7 +1,6 @@
 html, body {
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -46,23 +45,32 @@ body {
     }
   }
   
+  main {
+    margin: 48px auto;
+    
+    p {
+      max-width: 600px;
+      line-height: 150%;
+    }
+  }
   
   footer {
+    border-top: 1px solid rgba(242, 242, 242, .5);
+    padding-top: 24px;
     text-align: center;
     width: 100%;
     
-    div {
+    div.section {
+      margin-bottom: 48px;
+      
       h4 {
-        margin-top: 48px;
         font-weight: $reg;
         font-size: 18px;
       }
       
       ul {
-        margin-bottom: 48px;
-        
         li {
-          margin-top: 40px;
+          padding: 20px 0;
           
           a {
             text-decoration: none;
@@ -72,6 +80,9 @@ body {
           }
         }
       }
+    }
+    div.section:last-child {
+      margin-bottom: 24px;
     }
   }
 } /* END OF DEFAULT STYLING */
