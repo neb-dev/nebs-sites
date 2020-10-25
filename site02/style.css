@@ -51,16 +51,31 @@ table {
 @include respond-to(large) { ... }
 */
 html, body {
-  height: auto;
-  box-sizing: border-box; }
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto; }
+
+.dark {
+  background-color: #212121;
+  color: ghostwhite; }
+  .dark a {
+    color: ghostwhite; }
+
+.light {
+  background-color: #f2f2f2;
+  color: #212121; }
+  .light a {
+    color: #212121; }
+  .light footer {
+    border-top: 1px solid rgba(21, 21, 21, 0.15); }
+  .light button {
+    border: 1px solid #212121; }
 
 body {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #212121;
-  color: ghostwhite;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   padding: 12px; }
@@ -80,7 +95,6 @@ body {
           margin: 0 12px; }
           body header nav ul li a {
             text-decoration: none;
-            color: ghostwhite;
             display: block;
             padding: 12px 15px; }
   body main {
@@ -89,25 +103,63 @@ body {
       max-width: 600px;
       line-height: 150%; }
   body footer {
-    border-top: 1px solid rgba(242, 242, 242, 0.5);
+    border-top: 1px solid rgba(242, 242, 242, 0.15);
     padding-top: 24px;
     text-align: center;
     width: 100%; }
-    body footer div.section {
+    body footer .footer-links div.section {
       margin-bottom: 48px; }
-      body footer div.section h4 {
+      body footer .footer-links div.section h4 {
         font-weight: 400;
         font-size: 18px; }
-      body footer div.section ul li {
+      body footer .footer-links div.section ul li {
         padding: 20px 0; }
-        body footer div.section ul li a {
+        body footer .footer-links div.section ul li a {
           text-decoration: none;
-          color: ghostwhite;
           font-size: 14px;
           padding: 12px 30px; }
-    body footer div.section:last-child {
+    body footer .footer-links div.section:last-child {
       margin-bottom: 24px; }
+    body footer .sub-footer {
+      padding: 12px 0;
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body footer .sub-footer button {
+        font-family: 'Open Sans', sans-serif;
+        width: 100px;
+        height: 25px; }
 
 /* END OF DEFAULT STYLING */
+@media (min-width: 767px) {
+  body {
+    padding: 14px; }
+    body main {
+      height: 50vh;
+      justify-self: flex-start; }
+    body footer .footer-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      body footer .footer-links div.section {
+        margin-bottom: 0; }
+      body footer .footer-links div.section:last-child {
+        margin-bottom: 0; } }
+/* END OF SMALL STYLING */
+@media (min-width: 992px) {
+  body {
+    padding: 18px; } }
+/* END OF MEDIUM STYLING */
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px; }
+    body header {
+      flex-flow: row;
+      justify-content: space-between;
+      width: 100%; } }
+/* END OF LARGE STYLING */
 
 /*# sourceMappingURL=style.css.map */
