@@ -67,7 +67,35 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding: 12px; }
+  padding: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center; }
+  body header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
+    body header h4 {
+      font-size: 18px;
+      font-weight: 400; }
+    body header nav ul {
+      display: flex; }
+      body header nav ul li {
+        margin: 0 12px; }
+        body header nav ul li a {
+          display: block;
+          padding: 12px 15px;
+          text-decoration: none;
+          color: ghostwhite; }
+  body main {
+    height: 100%; }
+  body footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
 
 /* END DEFAULT STYLING */
 

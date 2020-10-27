@@ -19,4 +19,44 @@ body {
   font-weight: $light;
   font-size: 16px;
   padding: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      font-size: 18px;
+      font-weight: $reg;
+    }
+    nav {
+      ul {
+        display: flex;
+        li {
+          margin: 0 12px;
+          a{
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+  
+  main {
+    height: 100%;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 } /* END DEFAULT STYLING */
