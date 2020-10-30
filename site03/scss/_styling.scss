@@ -50,7 +50,45 @@ body {
   }
   
   main {
-    height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    div.store {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+      div.item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 25px 0;
+        
+        div.item-pic {
+          background-color: #333333;
+          height: 200px;
+          width: 100%;
+        }
+        
+        button {
+         border: none;
+          width: 50%;
+          height: 40px;
+          font-family: "Open Sans", sans-serif;
+        }
+        button.add-btn {
+          background-color: lightgreen;
+        }
+        button.details.btn {
+          
+        }
+      }
+    }
   }
   
   footer {

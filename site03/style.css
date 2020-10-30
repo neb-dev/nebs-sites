@@ -90,7 +90,33 @@ body {
           text-decoration: none;
           color: ghostwhite; }
   body main {
-    height: 100%; }
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body main div.store {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      body main div.store div.item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 25px 0; }
+        body main div.store div.item div.item-pic {
+          background-color: #333333;
+          height: 200px;
+          width: 100%; }
+        body main div.store div.item button {
+          border: none;
+          width: 50%;
+          height: 40px;
+          font-family: "Open Sans", sans-serif; }
+        body main div.store div.item button.add-btn {
+          background-color: lightgreen; }
   body footer {
     display: flex;
     justify-content: space-between;
