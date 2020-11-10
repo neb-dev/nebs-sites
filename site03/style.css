@@ -93,36 +93,55 @@ body {
     height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
     body main div.store {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
       body main div.store div.item {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: auto;
         margin: 25px 0; }
         body main div.store div.item div.item-pic {
-          background-color: #333333;
-          height: 200px;
+          background-color: #777;
+          height: 250px;
           width: 100%; }
-        body main div.store div.item button {
-          border: none;
-          width: 50%;
-          height: 40px;
-          font-family: "Open Sans", sans-serif; }
-        body main div.store div.item button.add-btn {
-          background-color: lightgreen; }
+        body main div.store div.item div.item-controls {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: auto; }
+          body main div.store div.item div.item-controls button {
+            border: none;
+            width: 50%;
+            height: 40px;
+            font-family: "Open Sans", sans-serif; }
+          body main div.store div.item div.item-controls button.add-btn {
+            background-color: lightgreen; }
   body footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
 
-/* END DEFAULT STYLING */
+/* END DEFAULT DEVICE STYLING */
+@media (min-width: 767px) {
+  body main div.store {
+    flex-flow: row;
+    flex-wrap: wrap; }
+    body main div.store div.item {
+      margin: 0 25px;
+      width: 200px; }
+      body main div.store div.item button {
+        width: 25%; } }
+/* END SMALL DEVICE STYLING */
 
 /*# sourceMappingURL=style.css.map */

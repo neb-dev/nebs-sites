@@ -54,38 +54,49 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     
     div.store {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 100%;
       
       div.item {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: auto;
         margin: 25px 0;
         
         div.item-pic {
-          background-color: #333333;
-          height: 200px;
+          background-color: #777;
+          height: 250px;
           width: 100%;
         }
         
-        button {
-         border: none;
-          width: 50%;
-          height: 40px;
-          font-family: "Open Sans", sans-serif;
-        }
-        button.add-btn {
-          background-color: lightgreen;
-        }
-        button.details.btn {
+        div.item-controls {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: auto;
           
+           button {
+            border: none;
+            width: 50%;
+            height: 40px;
+            font-family: "Open Sans", sans-serif;
+          }
+          button.add-btn {
+            background-color: lightgreen;
+          }
+          button.details.btn {
+
+          }
         }
       }
     }
@@ -97,4 +108,28 @@ body {
     align-items: center;
     width: 100%;
   }
-} /* END DEFAULT STYLING */
+} /* END DEFAULT DEVICE STYLING */
+
+@include respond-to(small) {
+  body {
+    main {
+      div.store {
+        flex-flow: row;
+        flex-wrap: wrap;
+
+        div.item {
+          margin: 0 25px;
+          width: 200px;
+          
+          div.item-pic {
+            
+          }
+          
+          button {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+} /* END SMALL DEVICE STYLING */

@@ -9,13 +9,13 @@ $reg: 400;
       @content;
     }
   }
-  
+
   @else if $breakpoint == "medium" {
     @media (min-width: 992px) {
       @content;
     }
   }
-  
+
   @else if $breakpoint == "large" {
     @media (min-width: 1200px) {
       @content;
