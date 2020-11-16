@@ -29,16 +29,18 @@ body {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    
     h4 {
       font-size: 18px;
       font-weight: $reg;
     }
+    
     nav {
       ul {
         display: flex;
         li {
           margin: 0 12px;
-          a{
+          a {
             display: block;
             padding: 12px 15px;
             text-decoration: none;
@@ -52,6 +54,7 @@ body {
   main {
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -62,6 +65,10 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
+      
+      h4.heading {
+        align-self: flex-start;
+      }
       
       div.item {
         display: flex;
@@ -100,6 +107,18 @@ body {
         }
       }
     }
+    
+    div.blog {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+      h4.heading {
+        align-self: flex-start;
+      }
+    }
   }
   
   footer {
@@ -118,7 +137,7 @@ body {
         flex-wrap: wrap;
 
         div.item {
-          margin: 0 25px;
+          margin: 25px 25px;
           width: 200px;
           
           div.item-pic {

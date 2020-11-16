@@ -92,6 +92,7 @@ body {
   body main {
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%; }
@@ -101,6 +102,8 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%; }
+      body main div.store h4.heading {
+        align-self: flex-start; }
       body main div.store div.item {
         display: flex;
         flex-flow: column;
@@ -126,6 +129,14 @@ body {
             font-family: "Open Sans", sans-serif; }
           body main div.store div.item div.item-controls button.add-btn {
             background-color: lightgreen; }
+    body main div.blog {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      body main div.blog h4.heading {
+        align-self: flex-start; }
   body footer {
     display: flex;
     justify-content: space-between;
@@ -138,7 +149,7 @@ body {
     flex-flow: row;
     flex-wrap: wrap; }
     body main div.store div.item {
-      margin: 0 25px;
+      margin: 25px 25px;
       width: 200px; }
       body main div.store div.item button {
         width: 25%; } }
