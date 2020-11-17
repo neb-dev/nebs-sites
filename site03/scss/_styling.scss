@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   padding: 12px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   
@@ -59,16 +59,16 @@ body {
     align-items: center;
     width: 100%;
     
+    h4.heading {
+      align-self: flex-start;
+    }
+    
     div.store {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      
-      h4.heading {
-        align-self: flex-start;
-      }
       
       div.item {
         display: flex;
@@ -114,10 +114,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
-      
-      h4.heading {
-        align-self: flex-start;
-      }
     }
   }
   
@@ -141,7 +137,7 @@ body {
           width: 200px;
           
           div.item-pic {
-            
+            height: 175px;
           }
           
           button {

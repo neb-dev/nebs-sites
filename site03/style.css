@@ -69,7 +69,7 @@ body {
   font-size: 16px;
   padding: 12px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center; }
   body header {
@@ -96,14 +96,14 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%; }
+    body main h4.heading {
+      align-self: flex-start; }
     body main div.store {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%; }
-      body main div.store h4.heading {
-        align-self: flex-start; }
       body main div.store div.item {
         display: flex;
         flex-flow: column;
@@ -135,8 +135,6 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%; }
-      body main div.blog h4.heading {
-        align-self: flex-start; }
   body footer {
     display: flex;
     justify-content: space-between;
@@ -151,6 +149,8 @@ body {
     body main div.store div.item {
       margin: 25px 25px;
       width: 200px; }
+      body main div.store div.item div.item-pic {
+        height: 175px; }
       body main div.store div.item button {
         width: 25%; } }
 /* END SMALL DEVICE STYLING */
